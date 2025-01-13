@@ -1,33 +1,37 @@
 # Christ Church Assemblies Website
 
-This is the Christ Church Assemblies website, currently under construction. The website aims to provide information about the church, its services, and its online presence. The website features a clean design and is still a work in progress.
+Welcome to the Christ Church Assemblies website repository. This platform provides comprehensive information about our church, services, and online presence, featuring a clean and responsive design.
 
 ## Features
 
-- **Responsive Navbar**: Contains links to various sections such as leadership, service times, and online platforms (e.g., YouTube and Facebook).
-- **Welcome Section**: A warm greeting to visitors with information about service times and church locations.
-- **Media Section**: Displays images and offers links to online resources for the church, such as live streaming and locations.
-- **Footer**: Includes contact information, social media links, and donation options.
-- **Mobile Responsive**: The website adjusts for mobile viewports, ensuring a seamless experience across devices.
+- **Responsive Navbar**: Navigate seamlessly to sections such as Leadership, Service Times, and our online platforms on [YouTube](https://www.youtube.com/@christchurchassemblies) and [Facebook](https://www.facebook.com/christchurchassemblies).
+- **Welcome Section**: Receive a warm greeting with details about service times and church locations.
+- **Media Section**: Explore images and access links to our online resources, including live streaming and location information.
+- **Footer**: Find our contact information, social media links, and donation options.
+- **Mobile Responsive Design**: Enjoy a seamless experience across all devices with our adaptable layout.
 
 ## Technologies Used
 
-- **HTML**: Provides the structure for the website.
-- **CSS**: Used for styling the website, with custom variables for colors and font sizes.
-- **Font Awesome**: Icons for navigation and social media.
-- **Google Fonts**: Fonts like Poppins and Roboto for better typography.
-- **Responsive Design**: The site layout adjusts based on screen size using media queries.
+- **HTML**: Structures the website's content.
+- **CSS**: Styles the website, utilizing custom variables for colors and font sizes.
+- **JavaScript**: Enhances interactivity and dynamic content.
+- **Font Awesome**: Provides icons for navigation and social media.
+- **Google Fonts**: Implements fonts like Poppins and Roboto for improved typography.
+- **Responsive Design**: Adjusts the site layout based on screen size using media queries.
 
 ## Project Structure
 
-- `index.html`: The main webpage for the church, containing the navigation bar, main sections, and links to media.
-- `style.css`: Contains all the styling for the website including layout, fonts, and responsiveness.
-  
+- `index.html`: The main webpage containing the navigation bar, main sections, and links to media.
+- `style.css`: Includes all styling for the website, covering layout, fonts, and responsiveness.
+- `index.js`: Contains JavaScript code for interactive elements and dynamic content.
+- `images/`: Directory housing all image assets used on the website.
+- `leadership/`, `locations/`, `give/`: Directories containing specific content related to church leadership, locations, and giving options.
+
 ## Installation
 
 To view or run this website locally:
 
 1. Clone this repository:
 
-```bash
-git clone https://github.com/pravinireri/Christ-Church-Assemblies.git
+   ```bash
+   git clone https://github.com/pravinireri/Christ-Church-Assemblies.git
