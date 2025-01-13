@@ -22,13 +22,12 @@
     <!-- NAVBAR -->
     <nav>
         <div class="menu">
-            <a href="/">
-                <i class="fa-solid fa-bars"></i>
-            </a>
+            <i class="fa-solid fa-bars" id="menu-button"></i>
         </div>
+        
 
         <div class="locations">
-            <a href="/">
+            <a href="./leadership/leadership.html">
                 LEADERSHIP
             </a>
         </div>
@@ -40,19 +39,71 @@
         </div>
 
         <div class="give">
-            <a href="/">
+            <a href="./give/give.html">
                 GIVE
             </a>
         </div>
 
         <div class="visit">
-            <a href="/">
+            <a href="./locations/location-page.html">
                 VISIT US
             </a>
         </div>
     </nav>
-
-    <main>
+    
+    <!-- OVERLAY -->
+    <div id="overlay">
+        <div class="overlay-header">
+          <button id="close-button">&times;</button>
+          <div class="logo"><img src="./images/cca-logo.png" width="60px"></div>
+          <button class="visit-button">Visit Us</button>
+        </div>
+        <div class="overlay-content">
+          <div class="column">
+            <h3>LOCATIONS</h3>
+            <p>KAGIO</p>
+            <p>KANGAI</p>
+            <p>NAIROBI</p>
+          </div>
+          <div class="column">
+            <h3>QUICK LINKS</h3>
+            <p>HOME</p>
+            <p>LEADERSHIP</p>
+            <p>GIVE</p>
+          </div>
+          <div class="column">
+            <h3>MORE</h3>
+            <p>TEAM</p>
+            <p>MISSION</p>
+            <p>GROUPS</p>
+            <p>SERVE</p>
+            <p>CCA KIDS</p>
+            <p>CCA STUDENTS</p>
+            <p>CCA SCHOOL</p>
+            <p>CCA INTERNSHIP</p>
+            <p>CELEBRATE RECOVERY</p>
+          </div>
+        </div>
+        <div class="overlay-footer">
+          <div>
+            <h4>Contact Us</h4>
+            <p>christchurchassemblies021@gmail.com</p>
+            <p>+254 (0)722-438-231</p>
+          </div>
+          <div>
+            <h4>Give</h4>
+            <p>Paybill: 247 247</p>
+            <p>Account: 0722 438 231</p>
+          </div>
+          <div>
+            <h4>Follow Along</h4>
+            <p class="social-links">
+                <a href="https://web.facebook.com/people/Bishop-Richard-Maina-Gitahi/61552491486621/" target="_blank" rel="noopener norefferer"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@ChristChurchAssemblies" target="_blank" rel="noopener norefferer"><i class="fab fa-youtube"></i></a></p>
+          </div>
+        </div>
+      </div>    
+<main>
         <!-- Section 1: Welcome -->
          <section class="welcome-section">
             <div class="text">
@@ -62,7 +113,7 @@
                 </h1>
 
                 <h4>
-                    A Deliverance Church In Kagio, Kangai, and Nairobi
+                    Deliverance Church In Kagio, Kangai, and Nairobi
                 </h4>
 
                 <div class="container">
@@ -97,7 +148,7 @@
             <img src="./images/church-banner.jpg" alt="Bishop Headshot" class="media" id="bishop-headshot">
           <section class="links">
             <h2>Join Us</h2>
-            <a href="/" target="_blank" rel="noopener norefferer" id="location">Locations&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#locations-section" id="location">Locations&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
             <a href="https://www.youtube.com/@ChristChurchAssemblies" target="_blank" rel="noopener norefferer"id="watch-live">Watch Live &nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
           </section>
           <section class="space"></section>
@@ -109,7 +160,7 @@
 
         <!-- Section 3: Locations -->
 
-        <section class="locations-section">
+        <section class="locations-section" id="locations-section">
             <div class="badge">Locations</div>
 
             <div class="space-bewteen">
@@ -118,7 +169,7 @@
                 multiple locations.
             </strong></h2>
 
-            <a href="https://www.youtube.com/@ChristChurchAssemblies">Watch Online&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://www.youtube.com/@ChristChurchAssemblies" target="_blank" rel="noopener norefferer">Watch Online&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <div class="locations">
@@ -131,8 +182,8 @@
                         <span class="label">SERVICE TIMES</span><br>
                         7am, 10am
                     </p>
-                    <button class="info-button">More Info →</button>
-                    <img src="./images/kagio.png" alt="Nairobi location">
+                    <a href="./locations/kagio.html"><button class="info-button">More Info →</button></a>
+                    <img src="./images/kagio.png" alt="Kagio location">
                 </div>
         
                 <!-- Nairobi -->
@@ -144,7 +195,7 @@
                         <span class="label">SERVICE TIMES</span><br>
                         8:30am, 10am
                     </p>
-                    <button class="info-button">More Info →</button>
+                    <a href="./locations/nairobi.html"><button class="info-button">More Info →</button></a>
                     <img src="./images/Nairobi.png" alt="Nairobi location">
                 </div>
 
@@ -155,10 +206,10 @@
                     <hr class="divider">
                     <p class="service-times">
                         <span class="label">SERVICE TIMES</span><br>
-                        9am, 11am
+                        10am
                     </p>
-                    <button class="info-button">More Info →</button>
-                    <img src="./images/Kangai.png" alt="Nairobi location">
+                    <a href="./locations/kangai.html"><button class="info-button">More Info →</button></a>
+                    <img src="./images/Kangai.png" alt="Kangai location">
                 </div>
             </div>
         </section>
@@ -176,7 +227,7 @@
                 </div>
 
                 <div class="buttons">
-                    <a href="/">Leadership</a>
+                    <a href="./leadership/leadership.html">Leadership</a>
                 </div>
             </div>
             <div class="container-right">
@@ -195,7 +246,7 @@
                                 <p>We give to see lives changed! Giving online is safe, easy, and makes a massive difference. Click the Donate button below to give now.</p>
                             </div>
                             <div class="row-buttons ">
-                                <a href="/" class="button-outlined single-line">
+                                <a href="./give/give.html" class="button-outlined single-line">
                                     <span class="text">Donate</span>
                                 </a>
                             </div>
@@ -232,8 +283,11 @@
               </div>
               <div class="footer-item">
                 <i class="fa-solid fa-credit-card"></i>
-                <h4>Donate</h4>
-                <p><a href="#">Give Online</a></p>
+                <h4>Give</h4>
+                <p><a href="./give/give.html">
+                    Paybill: 247 247<br>
+                    Account Number: 0722 438 231
+                </a></p>
               </div>
             </div>
             <div class="social-media">
@@ -245,6 +299,6 @@
               <p class="rep-platform">Pravin Ireri</p>
             </div>
         </footer>
-          
+    <script src="index.js"></script>
 </body>
 </html>
