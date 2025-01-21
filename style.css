@@ -676,6 +676,10 @@ footer {
     opacity: 0.5;
 }
 
+#rep-link {
+    color: white;
+}
+
 footer .rep-platform {
     opacity: 0.25;
     font-size: 0.75em;

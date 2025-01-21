@@ -17,7 +17,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--off-white);
+    background-color: white;
 }
 
 a {
@@ -262,6 +262,10 @@ footer {
 .footer-bottom p {
     margin: 5px 0;
     opacity: 0.5;
+}
+
+#rep-link {
+    color: white;
 }
 
 footer .rep-platform {
