@@ -24,6 +24,50 @@ a {
   text-decoration: none;
 }
 
+/* PRELOADER */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.load-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+  animation: bounce 2s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.load-logo p {
+  font-size: 18px;
+  color: #555;
+}
+
 /* NAVBAR */
 
 nav {
