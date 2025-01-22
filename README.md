@@ -1,6 +1,6 @@
-# Christ Church Assemblies Website
+# Christ Church Assemblies Website (Under Development)
 
-Welcome to the Christ Church Assemblies website repository. This platform provides comprehensive information about our church, services, and online presence, featuring a clean and responsive design.
+Welcome to the official website of Christ Church Assemblies created by Pravin Ireri. This platform provides comprehensive information about our church, services, and online presence, featuring a clean and responsive design.
 
 ## Features
 
