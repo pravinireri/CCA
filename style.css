@@ -143,13 +143,14 @@ nav .visit a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0 170px;
+    height: 150px;
 }
   
 #close-button {
     background: none;
     border: none;
-    font-size: 30px;
+    font-size: 36px;
     color: #fff;
     cursor: pointer;
 }
@@ -157,12 +158,21 @@ nav .visit a:hover {
 .logo {
     font-size: 1px;
 }
-  
+
 .visit-button {
-    background: none;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: black;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 12px 32px;
+    border-radius: 2em;
+    transition: background-color 0.4s;
+}
+
+.visit-button:hover {
+    color: black;
+    background-color: var(--text-color);
     cursor: pointer;
 }
   
@@ -178,9 +188,18 @@ nav .visit a:hover {
     margin-bottom: 10px;
 }
   
-.column p {
+.column p, .column a {
     font-size: 16px;
     margin: 5px 0;
+}
+
+.column a {
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.column a:hover {
+    color: gold;
 }
   
   /* Overlay Footer */
@@ -734,47 +753,14 @@ footer .rep-platform {
     margin-right: 2%;
 }
 
-@media (max-width: 820px) {
-    /* NAVBAR */
+    /* Styles for small screens */
+@media (max-width: 480px) {}
 
-    nav {
-        padding: 0 20px;
-        width: 820px;
-    }
+    /* Styles for tablets and below */
+@media (max-width: 768px) {}
 
-    /* Section 1: Welcome */
+    /* Styles for medium tablets */
+@media (max-width: 1024px) {}
 
-    .welcome-section {
-        padding: 0 20px;
-        margin-top: -50px;
-    }
-    
-    .welcome-section h1 {
-        font-size: 85px;
-    }
-
-    .welcome-section h4 {
-        padding: 10px 0px;
-    }
-    
-    .welcome-section .container {
-        flex-direction: column  ;
-        gap: 0px;
-        margin-left: -150px;
-    }
-
-    .welcome-section .youtube, .welcome-section .facebook {
-        margin-left: -125px;
-    }
-
-    /* Section 2: Media */ 
-    
-      .section1 {
-        width: 200%;
-      }
-
-      .media {
-        width: 90%;
-        
-      }
-}
+    /* Styles for desktops and larger screens */
+@media (min-width: 1025px) {}
