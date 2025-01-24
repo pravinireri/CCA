@@ -296,6 +296,13 @@ nav .visit a:hover {
     font-size: 22px;
     text-align: center;
     margin-left: 15px;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+
+.youtube:hover, .facebook:hover {
+    color: var(--text-color);
+    background-color: black;
 }
 
 .welcome-section .container {
@@ -481,6 +488,13 @@ nav .visit a:hover {
     padding: 10px 20px;
     font-size: 14px;
     margin-top: 16px;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.info-button:hover {
+    color: #fff;
+    background-color: var(--background-color);
 }
 
 .location-card img {
@@ -639,9 +653,7 @@ nav .visit a:hover {
 }
 
 .give-section .row-buttons a {
-    margin-left: 0.25em;
-    margin-right: 0.25em;
-    margin-bottom: 0.5em;
+    margin: 0.5em 0.25em 0.5em 0.25em;
 
     font-size: 1rem;
     display: inline-block;
@@ -652,6 +664,7 @@ nav .visit a:hover {
     position: relative;
     overflow: hidden;
     font-weight: 600;
+    border-radius: 12px;
     transition: background-color 0.25s;
 }
 
@@ -751,6 +764,10 @@ footer .rep-platform {
     margin-top: 2em;
     margin-left: 2%;
     margin-right: 2%;
+}
+
+footer .rep-platform:hover {
+    text-decoration: underline;
 }
 
     /* Styles for small screens */
