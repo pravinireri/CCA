@@ -770,14 +770,176 @@ footer .rep-platform:hover {
     text-decoration: underline;
 }
 
-    /* Styles for small screens */
-@media (max-width: 480px) {}
+/* Styles for small screens (mobile) */
+@media (max-width: 480px) {
+    /* NAVBAR */
+    nav {
+        padding: 60px 15px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav .locations, nav .give {
+        display: none;
+    }
+    
+    nav .visit {
+        display: block;
+        order: 3;
+        margin-left: auto;
+    }
+    
+    nav .logo {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+    
+    nav .menu {
+        order: 1;
+        display: block;
+        margin-right: auto;
+    }
+    
+    /* WELCOME SECTION */
+    .welcome-section {
+        padding: 0 15px;
+    }
+    
+    .welcome-section h1 {
+        font-size: 42px;
+    }
+    
+    .welcome-section h4 {
+        font-size: 22px;
+    }
+    
+    .welcome-section p {
+        font-size: 18px;
+    }
+    
+    .welcome-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        margin-bottom: -20px;
+    }
+    
+    .welcome-section .social-links {
+        margin-top: 0;
+    }
+    
+    /* MEDIA SECTION */
+    .section1 {
+        margin-top: -100px;
+        height: 400px;
+    }
+    
+    .spacer {
+        margin-top: 300px;
+    }
+    
+    .media-wrapper {
+        margin-top: -450px;
+        height: 250px;
 
-    /* Styles for tablets and below */
-@media (max-width: 768px) {}
-
-    /* Styles for medium tablets */
-@media (max-width: 1024px) {}
-
-    /* Styles for desktops and larger screens */
-@media (min-width: 1025px) {}
+    }
+    
+    .media {
+        width: 90%;
+        height: 250px;
+        margin-bottom: -18px;
+    }
+    
+    .links {
+        margin-left: 15px;
+        margin-top: 50px;
+        font-size: 30px;
+    }
+    
+    /* LOCATIONS SECTION */
+    .locations-section {
+        margin: 0 15px;
+    }
+    
+    .locations-section .space-bewteen {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .locations-section h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .locations {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .location-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* BISHOP SECTION */
+    .bishop-section {
+        flex-direction: column;
+        padding: 30px 20px;
+        width: 92%;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+    
+    .bishop-section h2 {
+        font-size: 32px;
+    }
+    
+    .bishop-section p {
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: center;
+    }
+    
+    .bishop-section img {
+        position: static;
+        width: 100%;
+        max-width: 350px;
+        margin: 10px auto;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .bishop-section a {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .footer-item {
+        margin: 0;
+        display: none;
+    }
+    
+    .social-media {
+        margin: 0;
+    }
+    
+    .footer-bottom {
+        margin-top: 0;
+    }
+}
