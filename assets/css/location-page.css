@@ -437,3 +437,86 @@ footer .rep-platform {
   margin-left: 2%;
   margin-right: 2%;
 }
+
+
+/* Styles for small screens (mobile) */
+@media (max-width: 480px) {
+  /* NAVBAR */
+  nav {
+      padding: 60px 15px;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  nav .locations, nav .give {
+      display: none;
+  }
+  
+  nav .visit {
+      display: block;
+      order: 3;
+      margin-left: auto;
+  }
+  
+  nav .logo {
+      order: 2;
+      display: flex;
+      justify-content: center;
+      flex: 1;
+  }
+  
+  nav .menu {
+      order: 1;
+      display: block;
+      margin-right: auto;
+  }
+  
+  /* LOCATIONS SECTION */
+  .locations-section {
+      margin: 0 15px;
+      margin-top: 35px;
+  }
+  
+  .locations-section .space-bewteen {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .locations-section h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+  }
+  
+  .locations {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+  }
+  
+  .location-card {
+      width: 100%;
+      margin: 0 auto;
+  }
+  
+  /* FOOTER */
+  .footer-container {
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 10px;
+  }
+  
+  .footer-item {
+      margin: 0;
+      display: none;
+  }
+  
+  .social-media {
+      margin: 0;
+  }
+  
+  .footer-bottom {
+      margin-top: 0;
+  }
+}

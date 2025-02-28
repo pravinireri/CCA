@@ -325,3 +325,110 @@ footer {
     font-size: 14px;
     line-height: 1.6;
 }
+
+/* Styles for small screens (mobile) */
+@media (max-width: 480px) {
+    /* PRELOADER */
+    #preloader {
+        background-color: var(--off-white);
+    }
+
+    .load-logo {
+        width: 100px;
+    }
+
+    /* NAVBAR */
+    nav {
+        padding: 0 20px;
+        height: 80px;
+    }
+
+    nav .logo img {
+        width: 80px;
+    }
+
+    nav .locations,
+    nav .give {
+        display: none;
+    }
+
+    nav .visit a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* MENU OVERLAY */
+    .overlay-header {
+        padding: 10px 20px;
+    }
+
+    .overlay-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .overlay-footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .overlay-footer div {
+        text-align: center;
+    }
+
+    /* HEADER SECTION */
+    .header-section {
+        padding: 40px 20px;
+    }
+
+    .header-section .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header-section .left h5 {
+        font-size: 12px;
+    }
+
+    .header-section .left h1 {
+        font-size: 32px;
+    }
+
+    .header-section .left p {
+        font-size: 16px;
+    }
+
+    .header-section .left a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .header-section .right img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-item h4 {
+        font-size: 16px;
+    }
+
+    .footer-item p {
+        font-size: 14px;
+    }
+
+    .footer-item .icons {
+        font-size: 24px;
+    }
+}

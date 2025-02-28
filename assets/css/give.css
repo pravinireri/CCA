@@ -18,10 +18,18 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
     text-decoration: none;
+}
+
+main {
+    flex: 1;
 }
 
 /* PRELOADER */
@@ -238,6 +246,14 @@ footer {
     padding: 20px 0;
     width: 100%;
     box-sizing: border-box;
+
+    background-color: var(--background-color);
+    color: var(--off-white);
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
 }
   
 .footer-container {
@@ -320,4 +336,92 @@ footer .rep-platform {
     margin-top: 2em;
     margin-left: 2%;
     margin-right: 2%;
+}
+
+/* Styles for small screens (mobile) */
+@media (max-width: 480px) {
+    /* PRELOADER */
+    #preloader {
+        background-color: var(--off-white);
+    }
+
+    .load-logo {
+        width: 100px;
+    }
+
+    /* NAVBAR */
+    nav {
+        padding: 0 20px;
+        height: 80px;
+    }
+
+    nav .logo img {
+        width: 80px;
+    }
+
+    nav .locations,
+    nav .give {
+        display: none;
+    }
+
+    nav .visit a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* MENU OVERLAY */
+    .overlay-header {
+        padding: 10px 20px;
+    }
+
+    .overlay-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .overlay-footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .overlay-footer div {
+        text-align: center;
+    }
+
+    /* MAIN CONTENT */
+    .images {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 150px - 80px);
+        margin: 0;
+        background-color: white;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    /*  footer  */
+    .footer-item {
+        display: none;
+    }
+
+    .footer-container {
+        margin-top: -80px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .footer-bottom {
+        margin-top: 10px;
+    }
 }
